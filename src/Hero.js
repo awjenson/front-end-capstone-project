@@ -1,7 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Used inside button onClick
 import heroImage from './images/hero.png'; // Ensure the path is correct
 
-function Hero() {
+export default function Hero() {
+
+  const navigate = useNavigate();
+
   return (
     <section id="hero">
       <div className="hero-container">
@@ -13,7 +17,7 @@ function Hero() {
             <p>
               We are a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
             </p>
-            <button onClick={() => window.location.href = '#reservations'}>
+            <button onClick={() => navigate('/booking')}>
               Reserve a Table
             </button>
 
@@ -27,5 +31,3 @@ function Hero() {
     </section>
   );
 }
-
-export default Hero;

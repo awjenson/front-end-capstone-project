@@ -1,8 +1,8 @@
 import React from 'react';
-import aboutImage1 from './images/about1.png'; // Ensure the path is correct
-import aboutImage2 from './images/about2.png'; // Ensure the path is correct
+import aboutImage1 from './images/about1.png';
+import aboutImage2 from './images/about2.png';
 
-function About() {
+export default function About() {
   return (
     <section id="about">
 
@@ -28,5 +28,3 @@ function About() {
     </section>
   );
 }
-
-export default About;

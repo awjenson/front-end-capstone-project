@@ -5,7 +5,7 @@ import reviewer3 from './images/reviewer3.png';
 import reviewer4 from './images/reviewer4.png';
 
 
-function Testimonials() {
+export default function Testimonials() {
     const reviews = [
       {
         name: 'Sara Doe',
@@ -49,5 +49,3 @@ function Testimonials() {
       </section>
     );
   }
-
-  export default Testimonials;

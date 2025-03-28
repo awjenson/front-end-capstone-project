@@ -1,9 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Used inside button onClick
 import dishImage1 from './images/greek-salad.png'; // Update the path to your image
 import dishImage2 from './images/bruschetta.png';
 import dishImage3 from './images/lemon-dessert.png';
 
-function Highlights() {
+export default function Highlights() {
+
+  const navigate = useNavigate();
 
   const specials = [
     {
@@ -30,7 +33,9 @@ function Highlights() {
     <section id="highlights">
       <div className="highlights-header">
         <h3>This Week's Specials</h3>
-        <button onClick={() => window.location.href='#menu'}>Online Menu</button>
+        <button onClick={() => navigate('/menu')}>
+          Online Menu
+        </button>
       </div>
       <div className="specials-container">
         {specials.map((special, index) => (
@@ -39,7 +44,7 @@ function Highlights() {
             <h5>{special.name}</h5>
             <p>{special.description}</p>
             <p>{special.price}</p>
-            <button className="order-button" onClick={() => window.location.href = '#order-online'}>
+            <button className="order-button" onClick={() => navigate('/order-online')}>
               Order Online
             </button>
           </div>
@@ -48,5 +53,3 @@ function Highlights() {
     </section>
   );
 }
-
-export default Highlights;

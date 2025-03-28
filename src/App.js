@@ -1,33 +1,29 @@
-import './App.css';
-import Nav from './Nav';
-import Hero from './Hero';
-import Highlights from './Highlights';
-import Testimonials from './Testimonials';
-import About from './About';
-import Footer from './Footer';
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AppLayout from './AppLayout';
+import HomePage from './HomePage';
+import AboutPage from './AboutPage';
+import MenuPage from './MenuPage';
+import BookingPage from './BookingPage';
+import OrderOnlinePage from './OrderOnlinePage';
+import LoginPage from './LoginPage';
+import NotFoundPage from './NotFoundPage';
 
 function App() {
   return (
-    <div className="grid-container">
-      <div className="grid-item-nav">
-        <Nav />
-      </div>
-      <div className="grid-item-hero">
-        <Hero />
-      </div>
-      <div className="grid-item-highlights">
-        <Highlights />
-      </div>
-      <div className="grid-item-testimonials">
-        <Testimonials />
-      </div>
-      <div className="grid-item-about">
-        <About />
-      </div>
-      <div className="grid-item-footer">
-        <Footer />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<AppLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/menu" element={<MenuPage />} />
+          <Route path="/booking" element={<BookingPage />} />
+          <Route path="/order-online" element={<OrderOnlinePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
