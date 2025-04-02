@@ -7,6 +7,8 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // StrictMode is a tool for highlighting potential problems in an application
+  // https://react.dev/reference/react/StrictMode
   <React.StrictMode>
     <App />
   </React.StrictMode>

@@ -422,3 +422,19 @@ footer {
 .footer-contact p {
   margin: 0.5rem 0;
 }
+
+
+/* ------------ BookingForm.jsx ------------ */
+/* -------- Styling for the booking form --------- */
+.booking-form {
+  display: grid; /* Use grid layout */
+  max-width: 200px; /* Limit the form's width */
+  gap: 20px; /* Add spacing between form elements */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Add spacing between label and input */
+}
