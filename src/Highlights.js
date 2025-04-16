@@ -33,7 +33,10 @@ export default function Highlights() {
     <section id="highlights">
       <div className="highlights-header">
         <h3>This Week's Specials</h3>
-        <button onClick={() => navigate('/menu')}>
+        <button
+          onClick={() => navigate('/menu')}
+          aria-label="Online Menu Button"
+        >
           Online Menu
         </button>
       </div>
@@ -44,7 +47,11 @@ export default function Highlights() {
             <h5>{special.name}</h5>
             <p>{special.description}</p>
             <p>{special.price}</p>
-            <button className="order-button" onClick={() => navigate('/order-online')}>
+            <button
+              className="order-button"
+              onClick={() => navigate('/order-online')}
+              aria-label="Order Online Button"
+            >
               Order Online
             </button>
           </div>

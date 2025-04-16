@@ -11,8 +11,8 @@ function Footer() {
         </div>
         <div className="footer-nav">
           <h4>Doormat Navigation</h4>
-          <ul>
-          <li><Link to="/">Home</Link></li>
+          <ul className="footer-nav-links">
+            <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/menu">Menu</Link></li>
             <li><Link to="/booking">Reservations</Link></li>
@@ -28,10 +28,10 @@ function Footer() {
         </address>
         <div className="footer-social">
           <h4>Follow Us</h4>
-          <ul>
-            <li><a href="https://www.facebook.com">Facebook</a></li>
-            <li><a href="https://www.instagram.com">Instagram</a></li>
-            <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+          <ul className="footer-social-links">
+            <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
           </ul>
         </div>
       </div>

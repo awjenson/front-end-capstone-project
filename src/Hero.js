@@ -17,7 +17,10 @@ export default function Hero() {
             <p>
               We are a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
             </p>
-            <button onClick={() => navigate('/booking')}>
+            <button
+              onClick={() => navigate('/booking')}
+              aria-label="Reserve a Table Button"
+            >
               Reserve a Table
             </button>
 

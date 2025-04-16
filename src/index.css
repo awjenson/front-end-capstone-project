@@ -161,6 +161,11 @@ button:hover {
   font-weight: 400; /* Set font weight */
 }
 
+/* Hover effect */
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
 /* ------------ Hero Styles ------------ */
 #hero {
   padding-top: 1rem;
@@ -419,6 +424,11 @@ footer {
   text-decoration: none;
 }
 
+.footer-nav-links a:hover,
+.footer-social-links a:hover {
+  text-decoration: underline;
+}
+
 .footer-contact p {
   margin: 0.5rem 0;
 }
@@ -438,3 +448,235 @@ footer {
   flex-direction: column;
   gap: 5px; /* Add spacing between label and input */
 }
+
+
+/* -------- Styling for the booking form container --------- */
+.booking-form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto; /* Centers horizontally */
+  padding: 2rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  align-self: center; /* Additional centering for flex parent */
+}
+
+/* ------------ Styling for booking table ------------ */
+
+.booking-table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.booking-table th {
+  background-color: #495E57;
+  color: white;
+  padding: 1rem;
+  text-align: left;
+}
+
+.booking-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.booking-table tbody tr:hover {
+  background-color: #f8f8f8;
+}
+
+@media screen and (max-width: 768px) {
+  .booking-table {
+      overflow-x: auto;
+  }
+}
+
+
+
+/* ------------ MenuPage.jsx ------------ */
+/* src/MenuPage.css */
+.menu-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.menu-section {
+  margin-bottom: 3rem;
+}
+
+.menu-section h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #F4CE14;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.menu-item {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-item-content {
+  padding: 1rem;
+}
+
+.menu-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.menu-item h3 {
+  color: #333;
+  margin: 0;
+}
+
+.price {
+  color: #495E57;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.description {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .menu-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* ------------ BookingForm.jsx ------------ */
+
+/* src/LoginPage.css */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto; /* Centers horizontally */
+  padding: 2rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  align-self: center; /* Additional centering for flex parent */
+}
+
+.login-form {
+  width: 100%;
+}
+
+.form-group input,
+.form-group select {
+    height: 40px; /* Set consistent height for all inputs and selects */
+    padding: 0 10px; /* Add consistent padding */
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-group input::placeholder {
+  color: #aaa;
+}
+
+
+
+.login-button:hover {
+  background-color: #495E57;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+/* Error states */
+.form-group input:invalid {
+  border-color: #ff6b6b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .login-page {
+      padding: 1rem;
+  }
+
+  .login-page h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+  }
+
+  .login-container {
+      padding: 1.5rem;
+  }
+
+  .login-container h2 {
+      font-size: 1.5rem;
+  }
+}
+
