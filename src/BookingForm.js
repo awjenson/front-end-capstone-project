@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
 export default function BookingForm({ availableTimes, dispatch, submitForm, bookingData }) {
-    console.log('Booking Data in BookingForm:', bookingData); // Debugging
 
-    
+    // State variables for the form
     const [date, setDate] = useState('');
     const [time, setTime] = useState('');
     const [guests, setGuests] = useState(1);
     const [occasion, setOccasion] = useState('');
     const [isFormValid, setIsFormValid] = useState(false);
 
+    // Constants for the form
     const OCCASIONS = [
         'Birthday',
         'Anniversary',
@@ -27,13 +27,6 @@ export default function BookingForm({ availableTimes, dispatch, submitForm, book
             const isGuestsValid = guests >= 1 && guests <= 10;
             const isOccasionValid = occasion !== '';
 
-            console.log('Validation results:', {
-                isDateValid,
-                isTimeValid,
-                isGuestsValid,
-                isOccasionValid,
-                finalValidity: isDateValid && isTimeValid && isGuestsValid && isOccasionValid
-            });
 
             setIsFormValid(isDateValid && isTimeValid && isGuestsValid && isOccasionValid);
         };
@@ -82,9 +75,7 @@ export default function BookingForm({ availableTimes, dispatch, submitForm, book
             guests,
             occasion,
         };
-
-        console.log('Form submitted:', formData);
-
+        
         // Call the submitForm function passed via props
         // The submitForm function contains the Meta provided submitAPI function
         submitForm(formData);
@@ -189,7 +180,7 @@ export default function BookingForm({ availableTimes, dispatch, submitForm, book
                             disabled={!isFormValid}
                             aria-label="Submit Button"
                             style={{ 
-                                backgroundColor: !isFormValid ? 'gray' : '#F4CE14',
+                                backgroundColor: !isFormValid ? 'lightgray' : '#F4CE14',
                                 cursor: !isFormValid ? 'not-allowed' : 'pointer'
                             }}
                         >
@@ -201,7 +192,7 @@ export default function BookingForm({ availableTimes, dispatch, submitForm, book
             </section>
 
             {/* Table to Display Booking Data */}
-            <section>
+            <section className="confirmed-booking-container">
                 <h2>Confirmed Reservations</h2>
                 <table className="booking-table">
                     <thead>

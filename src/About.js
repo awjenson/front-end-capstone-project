@@ -4,9 +4,14 @@ import aboutImage2 from './images/about2.png';
 
 export default function About() {
   return (
-    <main id="about">
-      <div className="about-container">
-        <div className="about-left">
+    <section id="about">
+
+      <header>
+        <h2>Our Story</h2>
+      </header>
+
+      <article className="about-container">
+        <section className="about-left">
             <p>
               Little Lemon is a charming family-owned Mediterranean restaurant nestled in the heart of Chicago. 
               Established with love and passion for authentic Mediterranean cuisine, our restaurant has become 
@@ -23,13 +28,13 @@ export default function About() {
               has made Little Lemon a standout destination for both authentic and innovative Mediterranean dining 
               in Chicago.
             </p>
-        </div>
+        </section>
 
-        <div className="about-right">
+        <section className="about-right">
           <img src={aboutImage1} alt="Interior of Little Lemon restaurant" className="about-image1" />
           <img src={aboutImage2} alt="Delicious Mediterranean dish" className="about-image2" />
-        </div>
-      </div>
-    </main>
+        </section>
+      </article>
+    </section>
   );
 }

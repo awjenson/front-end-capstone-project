@@ -22,6 +22,7 @@ function App() {
           <Route path="/confirmed" element={<ConfirmedBooking />} />
           <Route path="/order-online" element={<OrderOnlinePage />} />
           <Route path="/login" element={<LoginPage />} />
+          {/* 404 Route */}
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

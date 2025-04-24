@@ -4,7 +4,9 @@ import { fetchAPI, submitAPI } from './api'; // Import fetchAPI and submitAPI
 import { useNavigate } from "react-router-dom";
 import { initializeTimes, updateTimes } from './bookingUtils';
 
+
 export default function BookingPage() {
+    // Use useNavigate to navigate to the confirmed page
     const navigate = useNavigate();
 
     // Use useReducer for availableTimes
@@ -30,7 +32,6 @@ export default function BookingPage() {
             // Add the new booking to the bookingData array
             setBookingData((prevData) => {
                 const updatedData = [...prevData, formData];
-                console.log('Updated Booking Data:', updatedData); // Debugging
                 // Navigate to the confirmation page and pass the updated bookingData
                 navigate("/confirmed", { state: { formData, bookingData: updatedData } });
                 return updatedData;
@@ -40,6 +41,7 @@ export default function BookingPage() {
         }
     }
 
+    // Render the BookingPage component with the BookingForm component
     return (
         <>
             <h1>Book A Reservation</h1>

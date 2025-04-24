@@ -10,7 +10,7 @@ function Footer() {
           <img src={logo} alt="Little Lemon Logo" />
         </div>
         <div className="footer-nav">
-          <h4>Doormat Navigation</h4>
+          <h1>Navigation</h1>
           <ul className="footer-nav-links">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
@@ -21,13 +21,13 @@ function Footer() {
           </ul>
         </div>
         <address className="footer-contact">
-          <h4>Contact Us</h4>
+          <h1>Contact Us</h1>
           <p>123 Main Street, Chicago, IL 60601</p>
           <p>(123) 456-7890</p>
           <p>info@littlelemon.com</p>
         </address>
         <div className="footer-social">
-          <h4>Follow Us</h4>
+          <h1>Follow Us</h1>
           <ul className="footer-social-links">
             <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
             <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
@@ -35,7 +35,6 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <p>&copy; 2025 Little Lemon. All rights reserved.</p>
     </footer>
   );
 }

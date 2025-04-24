@@ -1,12 +1,15 @@
-import Nav from './Nav';
-import Footer from './Footer';
+import React from 'react';
+import NotFound from './NotFound';
 
 export default function NotFoundPage() {
   return (
-    <div>
-        <h1>Page Not Found</h1>
-        <h2>Opps! The page you are looking for does not exist.</h2>
-        <p>Please check the URL and try again.</p>
-    </div>
-  )
+    <main className="not-found-page">
+        <header>
+            <h1>Page Not Found</h1>
+        </header>
+        <section>
+            <NotFound />
+        </section>
+    </main>
+  );
 }

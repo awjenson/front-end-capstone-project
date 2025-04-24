@@ -1,70 +1,159 @@
-# Getting Started with Create React App
+# Little Lemon Restaurant Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Video Demo: <URL HERE>
 
-## Available Scripts
+#### Description:
 
-In the project directory, you can run:
+This web application was built as my final project for CS50's Introduction to Computer Science course. Little Lemon is a fictitious restaurant located in Chicago, IL. The web app was built for Little Lemon to provide its customers with the ability to explore restaurant information, view the menu, create user accounts, and edit table reservations.
 
-### `npm start`
+### Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Little Lemon Restaurant web application is a React-based single-page application (SPA) that provides a seamless user experience for restaurant customers. The project emphasizes responsive design, accessibility, and user-friendly navigation while maintaining a consistent brand identity throughout.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Technical Stack
 
-### `npm test`
+- **Frontend Framework**: React
+- **Routing**: React Router DOM
+- **Testing**: Jest and React Testing Library
+- **Styling**: Custom CSS with responsive design
+- **State Management**: React Hooks (useState, useReducer, useEffect)
+- **Build Tool**: Create React App
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Key Features
 
-### `npm run build`
+1. **Homepage Layout**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Hero section with call-to-action for reservations
+  - Weekly specials highlights
+  - Customer testimonials
+  - About section with restaurant story
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Reservation System**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   - Interactive booking form with date and time selection
+   - Guest number specification (1-10 guests)
+   - Occasion selection
+   - Form validation and submission handling
+   - Booking confirmation page
+   - Local storage integration for booking data persistence
 
-### `npm run eject`
+3. **Menu Page**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Categorized display of menu items
+  - Detailed descriptions and pricing
+  - Responsive grid layout
+  - Organized sections (Starters, Main Courses, Desserts, Drinks)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **About Page**
+   - Restaurant history and story
+   - Chef profiles (Mario and Adrian)
+   - Business hours
+   - Location information
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### File Structure and Component Details
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **App.js**
 
-## Learn More
+   - Root component
+   - Implements React Router for navigation
+   - Defines main route structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Components/**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **App.js**: Main application component with routing setup
+- **AppLayout.js**: Layout wrapper component for consistent page structure
+- **HomePage.js**: Home page with hero, highlights, testimonials, and about section
+- **Nav.js**: Responsive navigation bar with mobile menu support
+- **Footer.js**: Site footer with navigation and social links
+- **Hero.js**: Hero section with dynamic content and call-to-action to make a reservation
+- **Highlights.js**: Featured menu items with responsive grid layout
+- **Testimonials.js**: Customer reviews with responsive card layout
+- **About.js**: Restaurant information with image gallery
+- **AboutPage.js**: About page component with restaurant information and hours
+- **Hours.js**: Operating hours display with responsive layout
+- **BookingPage.js**: Main reservations interface
+- **BookingForm.js**: Form for creating reservations and a table for viewing existing reservations
+- **BookingList.js**: Display of
+- **Login.js**: Login form component
+- **LoginPage.js**: Login page wrapper with form
+- **Register.js**: Registration form component
+- **RegisterPage.js**: Registration page wrapper with form
+- **Menu.js**: Menu component with item display
+- **MenuPage.js**: Menu page wrapper with filtering by menu category
+- **OrderOnline.js**: Online ordering interface
+- **OrderOnlinePage.js**: Online ordering page wrapper
+- **NotFoundPage.js**:
+- **NotFound.js**: 404 error page component
 
-### Code Splitting
+3. **Styling**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   - `index.css`: Global styles and variables
+   - Component-specific styling sections
+   - Responsive design breakpoints
+   - Brand color scheme ( #495E57, #F4CE14)
 
-### Analyzing the Bundle Size
+4. **Testing**
+   - `BookingForm.test.js`: Form validation tests
+   - `LoginPage.test.js`: Authentication tests
+   - Integration tests for booking flow
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Design Decisions
 
-### Making a Progressive Web App
+1. **Typography**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   - Chose Markazi Text for headings and Karla for body text
+   - Ensures readability while maintaining brand identity
 
-### Advanced Configuration
+2. **Color Scheme**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Primary colors: #495E57 (sage green) and #F4CE14 (lemon yellow)
+  - Creates a Mediterranean atmosphere while ensuring accessibility
 
-### Deployment
+3. **Layout**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   - Grid-based design for consistent spacing
+   - Responsive breakpoints for mobile-first approach
+   - Flexible component structure for easy maintenance
 
-### `npm run build` fails to minify
+4. **State Management**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   - Used React Hooks instead of Redux for simplicity
+   - Implemented useReducer for booking form state
+   - Local storage for persistence of booking data
+
+5. **Accessibility**
+   - ARIA labels for interactive elements
+   - Semantic HTML structure
+   - Color contrast compliance
+   - Keyboard navigation support
+
+### Future Enhancements
+
+1. **Authentication System**
+
+- User account creation and management
+  - Personalized booking history
+  - Profile management
+
+2. **Online Ordering**
+
+   - Integration with payment processing
+   - Delivery service integration
+   - Order tracking system
+
+3. **Additional Features**
+   - Newsletter subscription
+   - Special events calendar
+   - Customer loyalty program
+   - Social media integration
+
+### Installation and Setup
+
+1. Clone the repository
+2. Run `npm install` to install dependencies
+3. Use `npm start` to run the development server
+4. Run `npm test` to execute the test suite
+
+### Conclusion
+
+This project demonstrates proficiency in modern web development practices while creating a practical, user-friendly application for restaurant management. The emphasis on component reusability, clean code structure, and thorough testing ensures a maintainable and scalable solution.

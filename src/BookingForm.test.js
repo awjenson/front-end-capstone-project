@@ -122,7 +122,7 @@ describe('BookingForm HTML5 Validation', () => {
         const submitButton = screen.getByRole('button', { name: /submit/i });
         expect(submitButton).toBeDisabled();
         expect(submitButton).toHaveStyle({ 
-            backgroundColor: 'gray',
+            backgroundColor: 'lightgray',
             cursor: 'not-allowed'
         });
     });
@@ -171,7 +171,7 @@ describe('Form-wide Validation', () => {
         fireEvent.change(timeSelect, { target: { value: '17:00' } });
         
         const submitButton = screen.getByRole('button', { name: /submit/i });
-        expect(submitButton).toHaveStyle({ backgroundColor: 'gray' });
+        expect(submitButton).toHaveStyle({ backgroundColor: 'lightgray' });
         expect(submitButton).toHaveAttribute('disabled');
     });
 });

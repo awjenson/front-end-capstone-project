@@ -1,22 +1,5 @@
 import React from 'react';
-
-/*
-function MenuPage(props) { 
-  const [data, setData] = useState([]); 
-
-  useEffect(() => { 
-    document.title = 'Little Lemon'; 
-  }, []);
-
-  useEffect(() => {
-    fetch(`https://littlelemon/menu/${id}`)
-      .then(response => response.json())
-      .then(json => setData(json));
-  }, [props.id]); 
-
-  // ...
-} 
-*/
+import Menu from './Menu';
 
 
 const menuItems = [
@@ -24,7 +7,7 @@ const menuItems = [
         id: 1,
         title: "Greek Salad",
         description: "Fresh Mediterranean salad with cherry tomatoes, cucumber, red onion, olives, and feta cheese drizzled with olive oil.",
-        price: 12.99,
+        price: 10.99,
         image: "/greek-salad.jpg",
         category: "Starters"
     },
@@ -32,7 +15,7 @@ const menuItems = [
         id: 2,
         title: "Bruschetta",
         description: "Grilled bread rubbed with garlic and topped with diced tomatoes, fresh basil, and extra virgin olive oil.",
-        price: 9.99,
+        price: 6.99,
         image: "/bruschetta.jpg",
         category: "Starters"
     },
@@ -72,23 +55,23 @@ const menuItems = [
         id: 7,
         title: "Baklava",
         description: "Traditional Mediterranean dessert made with layers of filo, honey, and chopped nuts.",
-        price: 8.99,
+        price: 5.99,
         image: "/baklava.jpg",
         category: "Desserts"
     },
     {
         id: 8,
-        title: "Lemon Sorbet",
-        description: "Refreshing homemade lemon sorbet garnished with fresh mint.",
-        price: 7.99,
-        image: "/sorbet.jpg",
+        title: "Lemon Cake",
+        description: "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
+        price: 5.99,
+        image: "/lemon-cake.jpg",
         category: "Desserts"
     },
     {
         id: 9,
         title: "House Wine",
         description: "Selection of red or white wine from local Mediterranean vineyards.",
-        price: 6.99,
+        price: 7.99,
         image: "/wine.jpg",
         category: "Drinks"
     },
@@ -102,36 +85,13 @@ const menuItems = [
     }
 ];
 
+const menuCategories = ['Starters', 'Main Courses', 'Desserts', 'Drinks'];
+
 export default function MenuPage() {
     return (
-      <>
-        <h1>Our Menu</h1>
-
-        <main className="menu-page">
-
-            
-            {/* Group menu items by category */}
-            {['Starters', 'Main Courses', 'Desserts', 'Drinks'].map(category => (
-                <section key={category} className="menu-section">
-                    <h2>{category}</h2>
-                    <div className="menu-grid">
-                        {menuItems
-                            .filter(item => item.category === category)
-                            .map(item => (
-                                <article key={item.id} className="menu-item">
-                                    <div className="menu-item-content">
-                                        <div className="menu-item-header">
-                                            <h3>{item.title}</h3>
-                                            <p className="price">${item.price}</p>
-                                        </div>
-                                        <p className="description">{item.description}</p>
-                                    </div>
-                                </article>
-                            ))}
-                    </div>
-                </section>
-            ))}
-        </main>
+        <>
+            <h1>Our Menu</h1>
+            <Menu menuItems={menuItems} categories={menuCategories} />
         </>
     );
 }
