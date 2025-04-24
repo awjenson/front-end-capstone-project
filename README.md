@@ -1,6 +1,6 @@
 # Little Lemon Restaurant Web App
 
-#### Video Demo: <URL HERE>
+#### Video Demo: https://youtu.be/7h2BQ6ytigk
 
 #### Description:
 
