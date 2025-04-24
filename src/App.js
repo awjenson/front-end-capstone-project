@@ -5,7 +5,7 @@ import HomePage from './HomePage';
 import AboutPage from './AboutPage';
 import MenuPage from './MenuPage';
 import BookingPage from './BookingPage';
-import ConfirmedBooking from './ConfirmedBooking';
+import ConfirmedBookingPage from './ConfirmedBookingPage';  
 import OrderOnlinePage from './OrderOnlinePage';
 import LoginPage from './LoginPage';
 import NotFoundPage from './NotFoundPage';
@@ -19,7 +19,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/booking" element={<BookingPage />} />
-          <Route path="/confirmed" element={<ConfirmedBooking />} />
+          <Route path="/confirmed" element={<ConfirmedBookingPage />} />
           <Route path="/order-online" element={<OrderOnlinePage />} />
           <Route path="/login" element={<LoginPage />} />
           {/* 404 Route */}

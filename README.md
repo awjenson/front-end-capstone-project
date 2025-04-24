@@ -73,7 +73,7 @@ The Little Lemon Restaurant web application is a React-based single-page applica
 - **Hours.js**: Operating hours display with responsive layout
 - **BookingPage.js**: Main reservations interface
 - **BookingForm.js**: Form for creating reservations and a table for viewing existing reservations
-- **BookingList.js**: Display of
+- **ConfirmedBookingPage.js**: Confirmed booking page component with reservation details
 - **Login.js**: Login form component
 - **LoginPage.js**: Login page wrapper with form
 - **Register.js**: Registration form component
