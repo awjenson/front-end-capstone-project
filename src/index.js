@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+// Citing use of AI
+// I used both GitHub Copilot in VS Code and Cursor's AI Code Editor to help me code this file.
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

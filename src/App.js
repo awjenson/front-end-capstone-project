@@ -10,6 +10,9 @@ import OrderOnlinePage from './OrderOnlinePage';
 import LoginPage from './LoginPage';
 import NotFoundPage from './NotFoundPage';
 
+// Citing use of AI
+// I used both GitHub Copilot in VS Code and Cursor's AI Code Editor to help me code this file.
+
 function App() {
   return (
     <BrowserRouter>

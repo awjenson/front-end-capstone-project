@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from './images/logo-tall-green.png';
 
+// Citing use of AI
+// I used both GitHub Copilot in VS Code and Cursor's AI Code Editor to help me code this file.
+
 function Footer() {
   return (
     <footer id="footer">

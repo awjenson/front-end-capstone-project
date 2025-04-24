@@ -2,6 +2,9 @@ import React from 'react';
 import aboutImage1 from './images/about1.png';
 import aboutImage2 from './images/about2.png';
 
+// Citing use of AI
+// I used both GitHub Copilot in VS Code and Cursor's AI Code Editor to help me code this file.
+
 export default function About() {
   return (
     <section id="about">

@@ -2,6 +2,9 @@ import { Outlet } from "react-router-dom";
 import Nav from "./Nav";
 import Footer from "./Footer";
 
+// Citing use of AI
+// I used both GitHub Copilot in VS Code and Cursor's AI Code Editor to help me code this file.
+
 export default function AppLayout() {
 
   return (

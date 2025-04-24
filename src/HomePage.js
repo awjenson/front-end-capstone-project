@@ -8,6 +8,9 @@ import Highlights from './Highlights';
 import Testimonials from './Testimonials';
 import About from './About';
 
+// Citing use of AI
+// I used both GitHub Copilot in VS Code and Cursor's AI Code Editor to help me code this file.
+
 export default function HomePage() {
     return (
         // <></> is a React fragment.

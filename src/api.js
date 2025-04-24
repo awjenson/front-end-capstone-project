@@ -8,6 +8,9 @@
 // The API is not intended for production use and should be replaced with a real API in a real application.
 // This is a mock API for demonstration purposes only.
 
+// Citing use of AI
+// I used both GitHub Copilot in VS Code and Cursor's AI Code Editor to help me code this file.
+
 const seededRandom = function (seed) {
     var m = 2**35 - 31;
     var a = 185852;

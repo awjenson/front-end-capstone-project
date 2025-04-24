@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 export default function BookingForm({ availableTimes, dispatch, submitForm, bookingData }) {
 
+// Citing use of AI
+// I used both GitHub Copilot in VS Code and Cursor's AI Code Editor to help me code this file.
+
     // State variables for the form
     const [date, setDate] = useState('');
     const [time, setTime] = useState('');
@@ -75,7 +78,7 @@ export default function BookingForm({ availableTimes, dispatch, submitForm, book
             guests,
             occasion,
         };
-        
+
         // Call the submitForm function passed via props
         // The submitForm function contains the Meta provided submitAPI function
         submitForm(formData);

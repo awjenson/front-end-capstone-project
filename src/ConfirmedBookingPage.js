@@ -1,5 +1,7 @@
 import { useLocation, Link } from "react-router-dom";
 
+// Citing use of AI
+// I used both GitHub Copilot in VS Code and Cursor's AI Code Editor to help me code this file.
 
 export default function ConfirmedBookingPage() {
     const location = useLocation();

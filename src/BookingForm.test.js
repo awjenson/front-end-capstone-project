@@ -3,6 +3,9 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import BookingForm from './BookingForm';
 import { fetchAPI } from './api';
 
+// Citing use of AI
+// I used both GitHub Copilot in VS Code and Cursor's AI Code Editor to help me code this file.
+
 // Mock the api module
 jest.mock('./api', () => ({
     fetchAPI: jest.fn(),

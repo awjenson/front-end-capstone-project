@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Citing use of AI
+// I used both GitHub Copilot in VS Code and Cursor's AI Code Editor to help me code this file.
+
 export default function NotFound() {
   return (
     <section id="not-found">

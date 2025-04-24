@@ -1,6 +1,8 @@
 import React from 'react';
 import Menu from './Menu';
 
+// Citing use of AI
+// I used both GitHub Copilot in VS Code and Cursor's AI Code Editor to help me code this file.
 
 const menuItems = [
     {

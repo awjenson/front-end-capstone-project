@@ -4,6 +4,8 @@ import reviewer2 from './images/reviewer2.png';
 import reviewer3 from './images/reviewer3.png';
 import reviewer4 from './images/reviewer4.png';
 
+// Citing use of AI
+// I used both GitHub Copilot in VS Code and Cursor's AI Code Editor to help me code this file.
 
 export default function Testimonials() {
     const reviews = [

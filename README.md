@@ -1,8 +1,8 @@
 # Little Lemon Restaurant Web App
 
-#### Video Demo: https://youtu.be/7h2BQ6ytigk
+### Video Demo: https://youtu.be/7h2BQ6ytigk
 
-#### Description:
+### Description:
 
 This web application was built as my final project for CS50's Introduction to Computer Science course. Little Lemon is a fictitious restaurant located in Chicago, IL. The web app was built for Little Lemon to provide its customers with the ability to explore restaurant information, view the menu, create user accounts, and edit table reservations.
 
@@ -153,6 +153,13 @@ The Little Lemon Restaurant web application is a React-based single-page applica
 2. Run `npm install` to install dependencies
 3. Use `npm start` to run the development server
 4. Run `npm test` to execute the test suite
+
+### Citing Use of AI
+
+Throughout the creation of this project I used both GitHub's AI Copilot in VS Code and Cursor's AI Code Editor. It was an iterative process with coding my React components, designing the CSS, writing tests, and debugging any errors. But, but the essence of this project is still my own work.
+
+- **GitHub Copilot in VS Code**: https://code.visualstudio.com/docs/copilot/overview
+- **Cursor**: https://www.cursor.com/
 
 ### Conclusion
 

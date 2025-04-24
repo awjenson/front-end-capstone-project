@@ -1,6 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import Login from './Login';
 
+// Citing use of AI
+// I used both GitHub Copilot in VS Code and Cursor's AI Code Editor to help me code this file.
+
 // Helper function to render the Login component
 const renderLogin = () => {
   render(<Login />);

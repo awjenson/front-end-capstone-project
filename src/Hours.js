@@ -1,6 +1,10 @@
 import React from 'react';
 import hoursImage1 from './images/hours1.png';
 import hoursImage2 from './images/hours2.png';
+
+// Citing use of AI
+// I used both GitHub Copilot in VS Code and Cursor's AI Code Editor to help me code this file.
+
 export default function Hours() {
     const businessHours = [
         { day: 'Monday', hours: '4:00 PM - 10:00 PM' },

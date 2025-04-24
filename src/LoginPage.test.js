@@ -2,13 +2,15 @@ import { render, screen } from '@testing-library/react';
 import Login from './LoginPage';
 
 
+// Citing use of AI
+// I used both GitHub Copilot in VS Code and Cursor's AI Code Editor to help me code this file.
+
 // Wrap component with BrowserRouter since Hero likely contains Links
 const renderLogin = () => {
     return render(
         <Login />
     );
 };
-
 
 describe('Login Component', () => {
 

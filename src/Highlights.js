@@ -4,6 +4,9 @@ import dishImage1 from './images/greek-salad.png';
 import dishImage2 from './images/bruschetta.png';
 import dishImage3 from './images/lemon-cake.png';
 
+// Citing use of AI
+// I used both GitHub Copilot in VS Code and Cursor's AI Code Editor to help me code this file.
+
 export default function Highlights() {
 
   const navigate = useNavigate();
